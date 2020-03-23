@@ -17,4 +17,8 @@ export class DiscoverPage implements OnInit {
     this.loadedPlaces = this.placesService.getPlaces();
   }
 
+  onFilterUpdate(event: any) {
+    console.log(event.detail);
+  }
+
 }
